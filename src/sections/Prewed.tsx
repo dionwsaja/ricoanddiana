@@ -36,16 +36,15 @@ const prewedPhotos = [
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
-  visible: (delay = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
     transition: {
       duration: 0.75,
-      delay,
       ease: "easeOut",
     },
-  }),
+  },
 };
 
 export const PrewedSection = () => {
@@ -61,8 +60,8 @@ export const PrewedSection = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
+          transition={{ delay: 0.2 }} // delay per elemen
           className="text-center mb-16"
         >
           <h2 className="font-great-vibes text-5xl md:text-6xl text-[#C5A065] drop-shadow-lg">
@@ -73,9 +72,8 @@ export const PrewedSection = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
           variants={fadeInUp}
-          transition={{ delay: 0.15 }}
+          transition={{ delay: 0.2 }} // delay per elemen
         >
           <Swiper
             modules={[Autoplay]}

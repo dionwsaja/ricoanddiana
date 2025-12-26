@@ -15,7 +15,7 @@ export const Love = () => {
       touchMultiplier: 1,
     });
 
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

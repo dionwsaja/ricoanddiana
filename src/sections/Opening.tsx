@@ -17,7 +17,7 @@ export const Opening = () => {
       touchMultiplier: 1,
     });
 
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }

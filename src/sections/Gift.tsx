@@ -12,10 +12,10 @@ export const Gift = () => {
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       // smooth: true,
-      mouseMultiplier: 1,
+      touchMultiplier: 1,
     });
 
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
@@ -63,7 +63,7 @@ export const Gift = () => {
     );
   }, []);
 
-  const copyToClipboard = (text) => {
+  const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text);
     alert("Nomor rekening disalin!");
   };
