@@ -2,17 +2,16 @@ import { motion } from "framer-motion";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
-  visible: (delay = 0) => ({
+  visible: {
     opacity: 1,
     y: 0,
     filter: "blur(0px)",
     transition: {
       duration: 0.75,
-      delay,
       ease: "easeOut",
     },
-  }),
-};
+  },
+} satisfies import("framer-motion").Variants;
 
 export const RSVPSection = () => {
   return (

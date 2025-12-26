@@ -19,15 +19,17 @@ const MusicPlayer = () => {
         onend: () => console.log("Lagu selesai, repeat karena loop: true"),
       });
 
-      const playPromise = soundRef.current.play();
-      if (playPromise !== undefined) {
+      onloaderror: (_id: number, err: string) => console.error("Gagal load musik:", err),
+
+      const playPromise = soundRef.current?.play();
+      if (playPromise instanceof Promise) {
         playPromise
           .then(() => {
             console.log("Musik mulai play");
             setIsPlaying(true);
           })
           .catch((err) => {
-            console.warn("Autoplay diblok browser:", err);
+            console.warn("Autoplay diblok:", err);
             setIsPlaying(false);
           });
       }
