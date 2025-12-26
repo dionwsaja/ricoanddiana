@@ -64,7 +64,6 @@ export const RSVPSection = () => {
               />
             </div>
 
-            {/* Jumlah Tamu */}
             <div className="text-left">
               <label
                 htmlFor="guests"
@@ -85,7 +84,6 @@ export const RSVPSection = () => {
               </select>
             </div>
 
-            {/* Ucapan */}
             <div className="text-left">
               <label
                 htmlFor="message"
@@ -101,7 +99,6 @@ export const RSVPSection = () => {
               />
             </div>
 
-            {/* Tombol Kirim */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -111,10 +108,6 @@ export const RSVPSection = () => {
               Kirim Konfirmasi
             </motion.button>
           </form>
-
-          <p className="text-[#F5F0E6]/70 text-sm mt-8 italic">
-            Konfirmasi paling lambat 10 Januari 2026. Terima kasih!
-          </p>
         </motion.div>
       </div>
     </section>
