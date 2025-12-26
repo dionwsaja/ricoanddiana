@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue: #1b263b;
+  --color-gold: #c5a065;
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url("./assets/fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Optional: class utility custom */
+.font-great-vibes {
+  font-family: "Great Vibes", cursive;
+}
