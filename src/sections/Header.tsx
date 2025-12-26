@@ -5,7 +5,7 @@ import gsap from "gsap";
 export const Header = () => {
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
+    // dion
     tl.fromTo(
       ".bg-image",
       { scale: 1.1, opacity: 0 },
