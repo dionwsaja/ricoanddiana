@@ -9,29 +9,17 @@ import {
 import "swiper/css";
 import "swiper/css/autoplay";
 
-// IMPORT FOTO
-import img1 from "../assets/images/1.jpg";
-import img2 from "../assets/images/2.jpg";
-import img3 from "../assets/images/3.jpg";
-import img4 from "../assets/images/4.jpg";
-import img5 from "../assets/images/5.jpg";
-import img6 from "../assets/images/6.jpg";
-import img7 from "../assets/images/7.jpg";
-import img8 from "../assets/images/8.jpg";
-import img9 from "../assets/images/9.jpg";
-import img10 from "../assets/images/10.jpg";
-
 const prewedPhotos = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-  img10,
+  "/images/1.jpg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+  "/images/5.jpg",
+  "/images/6.jpg",
+  "/images/7.jpg",
+  "/images/8.jpg",
+  "/images/9.jpg",
+  "/images/10.jpg",
 ];
 
 const fadeInUp: Variants = {
@@ -63,46 +51,40 @@ export const PrewedSection = () => {
           variants={fadeInUp}
           className="text-center mb-16"
         >
-          <h2 className="font-great-vibes text-5xl md:text-6xl text-[#C5A065] drop-shadow-lg">
+          <h2 className="font-great-vibes text-5xl md:text-6xl text-[#C5A065]">
             Prewedding Moments
           </h2>
         </motion.div>
 
-        <motion.div initial="hidden" whileInView="visible" variants={fadeInUp}>
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={20}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{
-              delay: 4000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
-            }}
-            className="mySwiper"
-          >
-            {prewedPhotos.map((img, index) => (
-              <SwiperSlide key={index}>
-                <div className="overflow-hidden group rounded-3xl transition-all duration-700 ease-out shadow-2xl border-2 border-[#C5A065]/20 hover:border-[#C5A065]/50">
-                  <img
-                    src={img}
-                    alt={`Prewedding ${index + 1}`}
-                    className="w-full h-full object-cover aspect-[3/4] md:aspect-[4/3] transform transition-transform duration-700 ease-out group-hover:scale-110"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={20}
+          slidesPerView={1}
+          loop
+          autoplay={{ delay: 4000 }}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+          }}
+        >
+          {prewedPhotos.map((src, i) => (
+            <SwiperSlide key={i}>
+              <div className="overflow-hidden rounded-3xl shadow-2xl">
+                <img
+                  src={src}
+                  alt={`Prewedding ${i + 1}`}
+                  className="w-full h-full object-cover aspect-[3/4] md:aspect-[4/3]"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-          <div className="flex items-center justify-center text-sm md:text-lg text-[#C5A065]/80 gap-x-4 mt-8">
-            <TbArrowNarrowLeftDashed className="text-3xl" />
-            <p className="">Slide untuk melihat lebih banyak</p>
-            <TbArrowNarrowRightDashed className="text-3xl" />
-          </div>
-        </motion.div>
+        <div className="flex items-center justify-center gap-4 mt-8 text-[#C5A065]/80">
+          <TbArrowNarrowLeftDashed className="text-3xl" />
+          <p>Slide untuk melihat lebih banyak</p>
+          <TbArrowNarrowRightDashed className="text-3xl" />
+        </div>
       </div>
     </section>
   );

@@ -4,9 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { useEffect } from "react";
 
-// Ganti dengan foto background kalian (prewedding atau couple)
-import eventBackground from "../assets/images/3.jpg";
-
 gsap.registerPlugin(ScrollTrigger);
 
 export const EventSection = () => {
@@ -14,7 +11,6 @@ export const EventSection = () => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      // smooth: true,
       touchMultiplier: 1,
     });
 
@@ -70,7 +66,7 @@ export const EventSection = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={eventBackground}
+          src="/images/3.jpg"
           alt="Event Background"
           className="bg-image w-full h-full object-cover opacity-0"
         />
@@ -83,7 +79,6 @@ export const EventSection = () => {
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24 relative">
-          {/* Divider Line Tengah */}
           <div className="divider-line hidden md:block absolute top-0 bottom-0 left-1/2 w-0 h-full border-l-2 border-[#C5A065]/70 transform -translate-x-1/2" />
 
           <div className="akad-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/50 shadow-lg text-center md:text-right w-full md:w-1/2">

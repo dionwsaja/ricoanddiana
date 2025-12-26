@@ -3,8 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 import { useEffect } from "react";
-import backgroundImage from "../assets/images/1.jpg";
-import flowers from "../assets/materials/flowers.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -13,7 +11,6 @@ export const Opening = () => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      // smooth: true,
       touchMultiplier: 1,
     });
 
@@ -60,7 +57,6 @@ export const Opening = () => {
       "-=0.6"
     );
 
-    // Animasi flowers masuk halus dari bawah
     tl.from(
       ".flowers-bg",
       { y: 200, opacity: 0, duration: 2, ease: "power3.out" },
@@ -73,18 +69,19 @@ export const Opening = () => {
       id="opening"
       className="relative min-h-screen flex items-center justify-center py-20 px-6 md:px-12 overflow-hidden"
     >
-      {/* Background utama */}
+      {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={backgroundImage}
+          src="/images/1.jpg"
           alt="Rico & Diana Prewedding"
           className="bg-image w-full h-full object-cover opacity-0"
         />
         <div className="overlay absolute inset-0 z-0 bg-linear-to-b from-[#1B263B] via-black/50 to-[#1B263B]/80 opacity-0" />
       </div>
 
+      {/* Flowers */}
       <img
-        src={flowers}
+        src="/materials/flowers.png"
         alt="Flowers decoration"
         className="flowers-bg absolute bottom-0 left-0 w-full h-auto object-cover object-bottom z-10 pointer-events-none"
       />

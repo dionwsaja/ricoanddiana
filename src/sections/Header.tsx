@@ -1,11 +1,10 @@
-import gambarHeader from "../assets/images/7.jpg";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 export const Header = () => {
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-    // dion
+
     tl.fromTo(
       ".bg-image",
       { scale: 1.1, opacity: 0 },
@@ -45,7 +44,7 @@ export const Header = () => {
     >
       <div className="absolute inset-0">
         <img
-          src={gambarHeader}
+          src="/images/7.jpg"
           alt="Rico & Diana Wedding"
           className="bg-image w-full h-full object-cover opacity-0 scale-105"
         />
@@ -75,27 +74,16 @@ export const Header = () => {
       </div>
 
       <div className="accent absolute bottom-8 left-8 md:left-16 opacity-40">
-        <svg
-          width="100"
-          height="100"
-          viewBox="0 0 100 100"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
           <path
             d="M50 10 C30 30, 20 60, 30 80 C50 100, 70 80, 70 60 C80 40, 70 20, 50 10"
             fill="#C5A065"
           />
         </svg>
       </div>
+
       <div className="accent absolute top-8 right-8 md:right-16 opacity-40 rotate-180">
-        <svg
-          width="100"
-          height="100"
-          viewBox="0 0 100 100"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
           <path
             d="M50 10 C30 30, 20 60, 30 80 C50 100, 70 80, 70 60 C80 40, 70 20, 50 10"
             fill="#C5A065"
