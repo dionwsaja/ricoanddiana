@@ -20,19 +20,19 @@ const MusicPlayer = () => {
       });
 
       // Coba autoplay
+      // Blok play di useEffect
       const playResult = soundRef.current?.play();
       if (playResult !== undefined) {
         if (typeof playResult === "number") {
-          // Autoplay langsung berhasil
           setIsPlaying(true);
         } else {
-          // Autoplay diblok, tunggu Promise
-          playResult
+          // TS sekarang tahu ini Promise
+          (playResult as Promise<void>)
             .then(() => {
               console.log("Musik mulai play");
               setIsPlaying(true);
             })
-            .catch((err) => {
+            .catch((err: unknown) => {
               console.warn("Autoplay diblok browser:", err);
               setIsPlaying(false);
             });

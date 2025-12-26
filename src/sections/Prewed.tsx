@@ -1,7 +1,7 @@
-// import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 import {
   TbArrowNarrowLeftDashed,
   TbArrowNarrowRightDashed,
@@ -9,7 +9,7 @@ import {
 import "swiper/css";
 import "swiper/css/autoplay";
 
-// IMPORT FOTO (pastikan path benar)
+// IMPORT FOTO
 import img1 from "../assets/images/1.jpg";
 import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
@@ -34,7 +34,7 @@ const prewedPhotos = [
   img10,
 ];
 
-const fadeInUp = {
+const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40, filter: "blur(10px)" },
   visible: {
     opacity: 1,
@@ -61,7 +61,6 @@ export const PrewedSection = () => {
           initial="hidden"
           whileInView="visible"
           variants={fadeInUp}
-          transition={{ delay: 0.2 }} // delay per elemen
           className="text-center mb-16"
         >
           <h2 className="font-great-vibes text-5xl md:text-6xl text-[#C5A065] drop-shadow-lg">
@@ -69,12 +68,7 @@ export const PrewedSection = () => {
           </h2>
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={fadeInUp}
-          transition={{ delay: 0.2 }} // delay per elemen
-        >
+        <motion.div initial="hidden" whileInView="visible" variants={fadeInUp}>
           <Swiper
             modules={[Autoplay]}
             spaceBetween={20}
