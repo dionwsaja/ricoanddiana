@@ -116,8 +116,7 @@ export const EventSection = () => {
             Tempat
           </h3>
           <p className="text-[#F5F0E6] text-xl font-light mb-4">
-            Kediaman mempelai Wanita, Rt 05 Rw 02, Sungelebak Karanggeneng,
-            Lamongan
+            Desa.Bulangan Rt.03 Rw.01 kecamatan dukun kabupaten gresik
           </p>
           <a
             href="https://maps.app.goo.gl/mAKyYD9p1BjwrmGR9"
