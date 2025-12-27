@@ -102,7 +102,7 @@ export const EventSection = () => {
 
         <div className="place-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/50 shadow-lg mt-12 max-w-3xl mx-auto">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.7421739203833!2d112.34347869999999!3d-7.0395575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ee04ed63d91d%3A0x4d586991e7cf0bf9!2sJl.%20Kadet%20Suwoko%20No.114%2C%20Sungelebak%2C%20Kec.%20Karang%20Geneng%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur%2062254!5e0!3m2!1sid!2sid!4v1766698934555!5m2!1sid!2sid"
+            src="https://www.google.com/maps/embed?pb=!4v1766847561628!6m8!1m7!1s9KsWv5Q7xPFQPcmVdG-XiA!2m2!1d-7.465682569600196!2d112.6269285791352!3f25.901247!4f0!5f0.7820865974627469"
             width="100%"
             height="450"
             style={{ border: 0 }}
