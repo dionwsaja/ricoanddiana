@@ -83,8 +83,8 @@ export const Gift = () => {
 
         <div className="gift-text text-[#F5F0E6] text-xl md:text-2xl font-light leading-relaxed mb-12">
           <p className="mb-4">
-            Your prayers, loveeeee, and presence are the greatest gifts we could
-            ask for.
+            Your prayers, love, and presence are the greatest gifts we could ask
+            for.
           </p>
           <p className="mb-4">
             If you wish to share a gift/ blessing, the information is available
@@ -93,57 +93,16 @@ export const Gift = () => {
           <p>Thank you for your kindness.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* SEABANK */}
+        <div className="flex w-full  justify-center items-center">
           <div className="gift-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 border border-[#C5A065]/50 shadow-lg">
             <h3 className="text-[#C5A065] text-2xl font-medium mb-4">
-              SEABANK
+              Bank Jatim
             </h3>
-            <p className="text-[#F5F0E6] text-lg mb-3">
-              a.n Mohammad Rico Listiawan
-            </p>
+            <p className="text-[#F5F0E6] text-lg mb-3">a.n TUTIK HANDAYANI</p>
             <div className="flex items-center justify-center gap-4">
-              <p className="text-[#F5F0E6]/90 text-xl font-light">
-                901133891203
-              </p>
+              <p className="text-[#F5F0E6]/90 text-xl font-light">0276402340</p>
               <button
                 onClick={() => copyToClipboard("901133891203")}
-                className="px-4 py-2 bg-[#C5A065]/30 text-[#C5A065] rounded-full text-sm hover:bg-[#C5A065]/50 transition"
-              >
-                Salin
-              </button>
-            </div>
-          </div>
-
-          {/* BRI */}
-          <div className="gift-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 border border-[#C5A065]/50 shadow-lg">
-            <h3 className="text-[#C5A065] text-2xl font-medium mb-4">BRI</h3>
-            <p className="text-[#F5F0E6] text-lg mb-3">
-              a.n Mohammad Rico Listiawan
-            </p>
-            <div className="flex items-center justify-center gap-4">
-              <p className="text-[#F5F0E6]/90 text-xl font-light">
-                6286 0101 0741 509
-              </p>
-              <button
-                onClick={() => copyToClipboard("628601010741509")}
-                className="px-4 py-2 bg-[#C5A065]/30 text-[#C5A065] rounded-full text-sm hover:bg-[#C5A065]/50 transition"
-              >
-                Salin
-              </button>
-            </div>
-          </div>
-
-          {/* DANA */}
-          <div className="gift-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 border border-[#C5A065]/50 shadow-lg">
-            <h3 className="text-[#C5A065] text-2xl font-medium mb-4">DANA</h3>
-            <p className="text-[#F5F0E6] text-lg mb-3">a.n Diana Agustin</p>
-            <div className="flex items-center justify-center gap-4">
-              <p className="text-[#F5F0E6]/90 text-xl font-light">
-                0856 4830 4847
-              </p>
-              <button
-                onClick={() => copyToClipboard("085648304847")}
                 className="px-4 py-2 bg-[#C5A065]/30 text-[#C5A065] rounded-full text-sm hover:bg-[#C5A065]/50 transition"
               >
                 Salin

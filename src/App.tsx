@@ -7,7 +7,6 @@ import { Gift } from "./sections/Gift";
 import { PrewedSection } from "./sections/Prewed";
 import { FooterSection } from "./sections/Footer";
 import MusicPlayer from "./components/MusicPlayer";
-import { RSVPSection } from "./sections/RSVP";
 
 function App() {
   return (
@@ -17,7 +16,6 @@ function App() {
       <Couple />
       <EventSection />
       <Love />
-      <RSVPSection />
       <Gift />
       <PrewedSection />
       <FooterSection />
