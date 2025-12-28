@@ -24,7 +24,7 @@ export const EventSection = () => {
   const eventData = [
     {
       title: "Walimatul Ursy",
-      date: "Sabtu - Minggu, 16 - 17 Januari 2026",
+      date: "Jumat - Sabtu, 16 - 17 Januari 2026",
       time: "Dibebaskan",
       label: "Mempelai Wanita",
       address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
