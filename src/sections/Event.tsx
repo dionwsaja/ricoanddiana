@@ -16,7 +16,6 @@ export const EventSection = () => {
       y: 100,
       opacity: 0,
       duration: 1.5,
-      stagger: 0.4,
       ease: "power4.out",
     });
   }, []);
@@ -27,20 +26,6 @@ export const EventSection = () => {
       date: "Jumat - Sabtu, 16 - 17 Januari 2026",
       time: "Bebas",
       label: "Mempelai Pria",
-      address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
-    },
-    {
-      title: "Akad Nikah",
-      date: "Sabtu, 17 Januari 2026",
-      time: "08:00 - 09:00 WIB",
-      label: "Mempelai Wanita",
-      address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
-    },
-    {
-      title: "Resepsi Pernikahan",
-      date: "Sabtu, 17 Januari 2026",
-      time: "10:00 - Selesai",
-      label: "Mempelai Wanita",
       address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
     },
   ];
@@ -57,9 +42,10 @@ export const EventSection = () => {
         The Wedding Event
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 w-full max-w-6xl">
+      {/* Container diubah menjadi flex agar satu kartu otomatis di tengah */}
+      <div className="flex justify-center w-full max-w-6xl">
         {eventData.map((event, index) => (
-          <div key={index} className="event-card w-full">
+          <div key={index} className="event-card w-full max-w-lg md:max-w-xl">
             <div className="bg-gold/80 p-3 md:p-5 rounded-t-[200px] rounded-b-3xl shadow-2xl h-full transform hover:scale-[1.02] transition-transform duration-500">
               <div
                 className="bg-[#F5F0E6] rounded-t-[200px] rounded-b-2xl p-8 md:p-14 text-center flex flex-col items-center justify-between min-h-[650px] md:min-h-[700px] relative"
@@ -77,7 +63,6 @@ export const EventSection = () => {
                   <div className="w-24 h-[1.5px] bg-gold/80/40 mb-8" />
                 </div>
 
-                {/* Konten Tengah (Waktu & Tempat) */}
                 <div className="space-y-6">
                   <div className="space-y-2">
                     <p className="text-gold/80 text-2xl font-bold uppercase tracking-wider">
@@ -98,15 +83,14 @@ export const EventSection = () => {
                   </div>
                 </div>
 
-                {/* Tombol Bawah */}
                 <div className="mt-10">
                   <a
-                    href="https://maps.app.goo.gl/ZMp63iATyHY2kiE89?g_st=iw"
+                    href="https://www.google.com/maps"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-3 px-10 py-4 bg-gold/80 text-white rounded-full hover:bg-[#7e6565] transition-all shadow-lg hover:shadow-2xl"
+                    className="group flex items-center gap-3 px-10 py-4 bg-gold/80 text-white rounded-full transition-all shadow-lg hover:shadow-2xl active:scale-95"
                   >
-                    <FaMapMarkerAlt className="group-hover:bounce" />
+                    <FaMapMarkerAlt />
                     <span>Open Map</span>
                   </a>
                 </div>
