@@ -25,7 +25,7 @@ export const EventSection = () => {
     {
       title: "Walimatul Ursy",
       date: "Jumat - Sabtu, 16 - 17 Januari 2026",
-      time: "Dibebaskan",
+      time: "Bebas",
       label: "Mempelai Pria",
       address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
     },
@@ -33,14 +33,14 @@ export const EventSection = () => {
       title: "Akad Nikah",
       date: "Sabtu, 17 Januari 2026",
       time: "08:00 - 09:00 WIB",
-      label: "Mempelai Pria",
+      label: "Mempelai Wanita",
       address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
     },
     {
       title: "Resepsi Pernikahan",
       date: "Sabtu, 17 Januari 2026",
       time: "10:00 - Selesai",
-      label: "Mempelai Pria",
+      label: "Mempelai Wanita",
       address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
     },
   ];
