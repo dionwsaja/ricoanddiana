@@ -7,7 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const EventSection = () => {
   useGSAP(() => {
-    // Animasi muncul berurutan (stagger)
     gsap.from(".event-card", {
       scrollTrigger: {
         trigger: "#event",
@@ -23,6 +22,13 @@ export const EventSection = () => {
   }, []);
 
   const eventData = [
+    {
+      title: "Walimatul Ursy",
+      date: "Sabtu - Minggu, 16 - 17 Januari 2026",
+      time: "Dibebaskan",
+      label: "Mempelai Wanita",
+      address: "Desa Bulangan Rt.03 Rw.01, Kec. Dukun, Kab. Gresik",
+    },
     {
       title: "Akad Nikah",
       date: "Sabtu, 17 Januari 2026",
@@ -51,7 +57,7 @@ export const EventSection = () => {
         The Wedding Event
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 w-full max-w-6xl">
         {eventData.map((event, index) => (
           <div key={index} className="event-card w-full">
             <div className="bg-gold/80 p-3 md:p-5 rounded-t-[200px] rounded-b-3xl shadow-2xl h-full transform hover:scale-[1.02] transition-transform duration-500">
