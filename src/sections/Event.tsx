@@ -102,7 +102,7 @@ export const EventSection = () => {
 
         <div className="place-card bg-[#1B263B]/60 backdrop-blur-sm rounded-xl p-8 md:p-10 border border-[#C5A065]/50 shadow-lg mt-12 max-w-3xl mx-auto">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!4v1766847561628!6m8!1m7!1s9KsWv5Q7xPFQPcmVdG-XiA!2m2!1d-7.465682569600196!2d112.6269285791352!3f25.901247!4f0!5f0.7820865974627469"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d277.1675384165217!2d112.39379492012539!3d-6.977090720952328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77ef6a1949e46f%3A0x6d4037831326447b!2sBalai%20Desa%20Bulangan!5e1!3m2!1sen!2sid!4v1766918956361!5m2!1sen!2sid"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -119,7 +119,7 @@ export const EventSection = () => {
             Desa.Bulangan Rt.03 Rw.01 kecamatan dukun kabupaten gresik
           </p>
           <a
-            href="https://maps.app.goo.gl/mAKyYD9p1BjwrmGR9"
+            href="https://maps.app.goo.gl/EcwhS7d3L14uUKWq6"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-[#C5A065] text-white font-medium rounded-full text-lg mt-4 hover:bg-[#d4b27a] transition-colors shadow-lg"
